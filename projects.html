@@ -28,6 +28,10 @@
         nav ul {
             display: flex;
             justify-content: center;
+            align-items: center;
+            /* Center the items vertically */
+            flex-grow: 1;
+            /* Allow the items to take up available space */
         }
 
         nav ul li {
@@ -49,7 +53,6 @@
             color: rgba(195, 43, 226, 0.73);
             font-size: 1.8rem;
         }
-
 
         .right ul {
             display: flex;
@@ -103,6 +106,48 @@
         .project-description {
             color: #b3b3b3;
             font-size: 16px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .projects-section {
+                grid-template-columns: 1fr;
+                /* Change to a single column on smaller screens */
+                gap: 20px;
+                /* Adjusted the gap for better spacing on smaller screens */
+            }
+
+            .project-card {
+                margin-bottom: 20px;
+                /* Add margin between project cards for better spacing */
+            }
+
+            nav {
+                justify-content: space-between;
+                /* Align items to the ends for better spacing */
+            }
+
+            .left {
+                font-size: 1.5rem;
+                /* Adjust font size for smaller screens */
+                margin-left: 20px;
+                /* Add left margin for space from the border */
+            }
+
+            nav ul {
+                margin-right: 20px;
+                /* Add right margin for space from the border */
+            }
+
+            nav ul li {
+                margin: 0 10px;
+                /* Adjust margin for better spacing between nav items */
+            }
+
+            .right ul {
+                margin-right: 20px;
+                /* Add right margin for space from the border */
+            }
         }
     </style>
 </head>
@@ -184,14 +229,14 @@
         <div class="project-card">
             <div class="project-title">Advocate Friend </div>
             <div class="project-description">
-               <ul>
-                <li>Virtual Assistant-> Interactive voice commands for instant legal insights.</li>
-                <li> IPC Section Search-> Robust search bar validates and details IPC sections.</li>
-                <li>Flutter Framework-> Cross-platform, responsive UI for seamless use.</li>
-                <li>User-Friendly-> Intuitive design for quick navigation.</li>
-                <li> Legal Companion-> On-the-go access to accurate legal information.</li>
-                <li>Step towards a smart and virtual legal system in India</li>
-               </ul>
+                <ul>
+                    <li>Virtual Assistant-> Interactive voice commands for instant legal insights.</li>
+                    <li> IPC Section Search-> Robust search bar validates and details IPC sections.</li>
+                    <li>Flutter Framework-> Cross-platform, responsive UI for seamless use.</li>
+                    <li>User-Friendly-> Intuitive design for quick navigation.</li>
+                    <li> Legal Companion-> On-the-go access to accurate legal information.</li>
+                    <li>Step towards a smart and virtual legal system in India</li>
+                </ul>
             </div>
         </div>
     </div>
